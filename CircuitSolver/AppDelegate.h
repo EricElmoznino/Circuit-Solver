@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const EECurrentUnitPrefsKey;
+extern NSString * const EEVoltageUnitPrefsKey;
+extern NSString * const EEResistanceUnitPrefsKey;
+extern NSString * const EEUnitPrefixesKey;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

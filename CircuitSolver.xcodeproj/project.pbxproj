@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07292CE71B45E47D009B7C11 /* EEInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07292CE61B45E47D009B7C11 /* EEInfoViewController.m */; };
+		0A20956B1B2D4524001110F6 /* EETableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A20956A1B2D4524001110F6 /* EETableCell.m */; };
+		0A92B1431B407E1100DE9D93 /* EESettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A92B1421B407E1100DE9D93 /* EESettingsViewController.m */; };
 		0AAF30BD1B2602810013EF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF30BC1B2602810013EF61 /* main.m */; };
 		0AAF30C01B2602810013EF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF30BF1B2602810013EF61 /* AppDelegate.m */; };
 		0AAF30C21B2602810013EF61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF30C11B2602810013EF61 /* Images.xcassets */; };
 		0AAF30C51B2602810013EF61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF30C31B2602810013EF61 /* LaunchScreen.xib */; };
 		0AAF30D11B2602810013EF61 /* CircuitSolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF30D01B2602810013EF61 /* CircuitSolverTests.m */; };
+		0AAF30DC1B2602A20013EF61 /* EEBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF30DB1B2602A20013EF61 /* EEBranch.m */; };
+		0AAF30E11B260BA50013EF61 /* EENode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF30E01B260BA50013EF61 /* EENode.m */; };
+		0AAF30E41B262B200013EF61 /* EECircuit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF30E31B262B200013EF61 /* EECircuit.m */; };
+		0AAF31021B2798C50013EF61 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF31011B2798C50013EF61 /* Storyboard.storyboard */; };
+		0AAF31051B279D750013EF61 /* EEBranchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF31041B279D750013EF61 /* EEBranchesViewController.m */; };
+		0AAF31081B27A5B70013EF61 /* EEBranchesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF31071B27A5B70013EF61 /* EEBranchesStore.m */; };
+		0AAF310B1B28823B0013EF61 /* EEDetailBranchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF310A1B28823B0013EF61 /* EEDetailBranchViewController.m */; };
+		0AAF310E1B2A28A30013EF61 /* EESolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF310D1B2A28A30013EF61 /* EESolutionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07292CE51B45E47D009B7C11 /* EEInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEInfoViewController.h; sourceTree = "<group>"; };
+		07292CE61B45E47D009B7C11 /* EEInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEInfoViewController.m; sourceTree = "<group>"; };
+		0A2095691B2D4524001110F6 /* EETableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EETableCell.h; sourceTree = "<group>"; };
+		0A20956A1B2D4524001110F6 /* EETableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EETableCell.m; sourceTree = "<group>"; };
+		0A92B1411B407E1100DE9D93 /* EESettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESettingsViewController.h; sourceTree = "<group>"; };
+		0A92B1421B407E1100DE9D93 /* EESettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESettingsViewController.m; sourceTree = "<group>"; };
 		0AAF30B71B2602810013EF61 /* CircuitSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircuitSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAF30BB1B2602810013EF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AAF30BC1B2602810013EF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +52,21 @@
 		0AAF30CA1B2602810013EF61 /* CircuitSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAF30CF1B2602810013EF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AAF30D01B2602810013EF61 /* CircuitSolverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircuitSolverTests.m; sourceTree = "<group>"; };
+		0AAF30DA1B2602A20013EF61 /* EEBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEBranch.h; sourceTree = "<group>"; };
+		0AAF30DB1B2602A20013EF61 /* EEBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEBranch.m; sourceTree = "<group>"; };
+		0AAF30DF1B260BA50013EF61 /* EENode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EENode.h; sourceTree = "<group>"; };
+		0AAF30E01B260BA50013EF61 /* EENode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EENode.m; sourceTree = "<group>"; };
+		0AAF30E21B262B200013EF61 /* EECircuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EECircuit.h; sourceTree = "<group>"; };
+		0AAF30E31B262B200013EF61 /* EECircuit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EECircuit.m; sourceTree = "<group>"; };
+		0AAF31011B2798C50013EF61 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		0AAF31031B279D750013EF61 /* EEBranchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEBranchesViewController.h; sourceTree = "<group>"; };
+		0AAF31041B279D750013EF61 /* EEBranchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEBranchesViewController.m; sourceTree = "<group>"; };
+		0AAF31061B27A5B70013EF61 /* EEBranchesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEBranchesStore.h; sourceTree = "<group>"; };
+		0AAF31071B27A5B70013EF61 /* EEBranchesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEBranchesStore.m; sourceTree = "<group>"; };
+		0AAF31091B28823B0013EF61 /* EEDetailBranchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EEDetailBranchViewController.h; sourceTree = "<group>"; };
+		0AAF310A1B28823B0013EF61 /* EEDetailBranchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEDetailBranchViewController.m; sourceTree = "<group>"; };
+		0AAF310C1B2A28A30013EF61 /* EESolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESolutionViewController.h; sourceTree = "<group>"; };
+		0AAF310D1B2A28A30013EF61 /* EESolutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESolutionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,27 @@
 		0AAF30AE1B2602810013EF61 = {
 			isa = PBXGroup;
 			children = (
+				0AAF31011B2798C50013EF61 /* Storyboard.storyboard */,
+				0A2095691B2D4524001110F6 /* EETableCell.h */,
+				0A20956A1B2D4524001110F6 /* EETableCell.m */,
+				07292CE51B45E47D009B7C11 /* EEInfoViewController.h */,
+				07292CE61B45E47D009B7C11 /* EEInfoViewController.m */,
+				0A92B1411B407E1100DE9D93 /* EESettingsViewController.h */,
+				0A92B1421B407E1100DE9D93 /* EESettingsViewController.m */,
+				0AAF310C1B2A28A30013EF61 /* EESolutionViewController.h */,
+				0AAF310D1B2A28A30013EF61 /* EESolutionViewController.m */,
+				0AAF31091B28823B0013EF61 /* EEDetailBranchViewController.h */,
+				0AAF310A1B28823B0013EF61 /* EEDetailBranchViewController.m */,
+				0AAF31031B279D750013EF61 /* EEBranchesViewController.h */,
+				0AAF31041B279D750013EF61 /* EEBranchesViewController.m */,
+				0AAF31061B27A5B70013EF61 /* EEBranchesStore.h */,
+				0AAF31071B27A5B70013EF61 /* EEBranchesStore.m */,
+				0AAF30E21B262B200013EF61 /* EECircuit.h */,
+				0AAF30E31B262B200013EF61 /* EECircuit.m */,
+				0AAF30DF1B260BA50013EF61 /* EENode.h */,
+				0AAF30E01B260BA50013EF61 /* EENode.m */,
+				0AAF30DA1B2602A20013EF61 /* EEBranch.h */,
+				0AAF30DB1B2602A20013EF61 /* EEBranch.m */,
 				0AAF30B91B2602810013EF61 /* CircuitSolver */,
 				0AAF30CD1B2602810013EF61 /* CircuitSolverTests */,
 				0AAF30B81B2602810013EF61 /* Products */,
@@ -155,11 +208,13 @@
 		0AAF30AF1B2602810013EF61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				CLASSPREFIX = EE;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Eric Elmoznino";
 				TargetAttributes = {
 					0AAF30B61B2602810013EF61 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = GEECX5EAT6;
 					};
 					0AAF30C91B2602810013EF61 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -193,6 +248,7 @@
 			files = (
 				0AAF30C51B2602810013EF61 /* LaunchScreen.xib in Resources */,
 				0AAF30C21B2602810013EF61 /* Images.xcassets in Resources */,
+				0AAF31021B2798C50013EF61 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +266,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAF310E1B2A28A30013EF61 /* EESolutionViewController.m in Sources */,
+				0A92B1431B407E1100DE9D93 /* EESettingsViewController.m in Sources */,
+				0AAF31081B27A5B70013EF61 /* EEBranchesStore.m in Sources */,
 				0AAF30C01B2602810013EF61 /* AppDelegate.m in Sources */,
+				0AAF30E41B262B200013EF61 /* EECircuit.m in Sources */,
+				0AAF310B1B28823B0013EF61 /* EEDetailBranchViewController.m in Sources */,
+				0AAF31051B279D750013EF61 /* EEBranchesViewController.m in Sources */,
+				0AAF30DC1B2602A20013EF61 /* EEBranch.m in Sources */,
 				0AAF30BD1B2602810013EF61 /* main.m in Sources */,
+				0A20956B1B2D4524001110F6 /* EETableCell.m in Sources */,
+				07292CE71B45E47D009B7C11 /* EEInfoViewController.m in Sources */,
+				0AAF30E11B260BA50013EF61 /* EENode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +332,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -281,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -319,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,9 +398,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CircuitSolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericelmoznino.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -341,9 +415,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CircuitSolver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericelmoznino.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -351,16 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = CircuitSolverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericelmoznino.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircuitSolver.app/CircuitSolver";
 			};
@@ -370,12 +448,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = CircuitSolverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericelmoznino.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircuitSolver.app/CircuitSolver";
 			};
@@ -400,6 +475,7 @@
 				0AAF30D61B2602810013EF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AAF30D71B2602810013EF61 /* Build configuration list for PBXNativeTarget "CircuitSolverTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +484,7 @@
 				0AAF30D91B2602810013EF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "EEBranchesStore.h"
+
+NSString * const EECurrentUnitPrefsKey = @"CurrentUnit";
+NSString * const EEVoltageUnitPrefsKey = @"VoltageUnit";
+NSString * const EEResistanceUnitPrefsKey = @"ResistanceUnit";
+NSString * const EEUnitPrefixesKey = @"UnitPrefixesKey";
 
 @interface AppDelegate ()
 
@@ -14,12 +20,47 @@
 
 @implementation AppDelegate
 
++ (void)initialize
+{
+    NSNumber *defaultCurrentMultiplier = @1;
+    NSNumber *defaultVoltageMultiplier = @1;
+    NSNumber *defaultResistanceMultiplier = @1;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *factorySettings = @{EECurrentUnitPrefsKey:defaultCurrentMultiplier,
+                                      EEVoltageUnitPrefsKey:defaultVoltageMultiplier,
+                                      EEResistanceUnitPrefsKey:defaultResistanceMultiplier,
+                                      EEUnitPrefixesKey:@[@"μ",
+                                                          @"m",
+                                                          @"",
+                                                          @"k",
+                                                          @"M"]
+                                      };
+    [defaults registerDefaults:factorySettings];
+}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    /*self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];*/
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     [self.window makeKeyAndVisible];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder
+{
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder
+{
     return YES;
 }
 
@@ -29,8 +70,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[EEBranchesStore sharedStore] saveChanges];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
